@@ -1,3 +1,3 @@
-var x = 3;
+const health = null;
 
-console.log(x);
+console.log(health, "Joshua", 58);
