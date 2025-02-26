@@ -47,3 +47,14 @@ function formatFullName(formatFullName) {
 	return `${nameInfo.firstName} ${nameInfo.lastName}`;
 }
 console.log(formatFullName("John", "Doe"));
+
+//Test 6: Create a game character description
+const character = {
+	name: "Hero",
+	weapon: "Sword",
+	level: 1,
+};
+function createCharacterDescription(createCharacterDescription) {
+	return `Level ${character.level} ${character.name} is wielding a ${character.weapon}`;
+}
+console.log(createCharacterDescription(character));
