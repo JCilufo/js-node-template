@@ -37,3 +37,13 @@ function calculateCartTotal(calculateCartTotal) {
 	return 100 * 0.07 + 100;
 }
 console.log(calculateCartTotal(cart));
+
+//Test 5: Format a full name
+const nameInfo = {
+	firstName: "John",
+	lastName: "Doe",
+};
+function formatFullName(formatFullName) {
+	return `${nameInfo.firstName} ${nameInfo.lastName}`;
+}
+console.log(formatFullName("John", "Doe"));
