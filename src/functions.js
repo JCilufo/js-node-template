@@ -27,3 +27,13 @@ function combineStrings(combineStrings) {
 	return `${strings.firstString} ${strings.secondString}`;
 }
 console.log(combineStrings("Hello", "World"));
+
+// Test 4: Calculate cart total with tax
+const cart = {
+	price: 100,
+	tax: 0.07,
+};
+function calculateCartTotal(calculateCartTotal) {
+	return 100 * 0.07 + 100;
+}
+console.log(calculateCartTotal(cart));
