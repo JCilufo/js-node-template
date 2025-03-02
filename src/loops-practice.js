@@ -6,3 +6,10 @@ for (let i = 0; i < nums.length; i++) {
 	const number = nums[i];
 	console.log(number);
 }
+
+let count = 1;
+
+while (count < 11) {
+	console.log(`${count}`);
+	count++;
+}
