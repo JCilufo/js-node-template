@@ -14,3 +14,17 @@ while (count < 11) {
 	console.log(`${count}`);
 	count++;
 }
+
+// Exercise 2:
+const favGames = [
+	"Call of Duty: Black Ops 2",
+	"Grand Theft Auto 5",
+	"Baldur's Gate 3",
+	"DOOM",
+	"Borderlands 2",
+];
+
+for (let i = 0; i < favGames.length; i++) {
+	console.log(`Item ${i + 1}: ${favGames[i]}`);
+}
+// I listed some of my favorite games (in no particular order) and used a for loop to list them out in the console. I used the i + 1 interpolation to make the list start at one and I used .length property to end at the last item on the list.
