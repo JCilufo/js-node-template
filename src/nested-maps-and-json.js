@@ -64,10 +64,12 @@ const monsters = [
     },
 ]
 
-const monstersWithHealthBonus = monsters.map((monster) => {
+const monstersDupe = JSON.parse(JSON.stringify(monsters))
+
+const monstersWithEnhancedDamage = monstersDupe.map((monster) => {
 	const localMonster = { ...monster }
 
-    localMonster.attacks.map(attack => {
+    localMonster.attacks.map((attack) => {
         attack.damage.max = attack.damage.max + 10
 
       return attack  
@@ -75,5 +77,5 @@ const monstersWithHealthBonus = monsters.map((monster) => {
     return monster
 });
 
-console.log(JSON.stringify(monsters, null, 2), "monsters");
-console.log(JSON.stringify(monstersWithHealthBonus, null, 2), "monstersWithHealthBonus");
+console.log(JSON.stringify(monsters, null, 4), "original monsters");
+console.log(JSON.stringify(monstersWithEnhancedDamage, null, 2));
