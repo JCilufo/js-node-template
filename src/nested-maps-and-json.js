@@ -64,13 +64,13 @@ const monsters = [
     },
 ]
 
-const monstersDupe = JSON.parse(JSON.stringify(monsters))
+const clonedMonsters = structuredClone(monsters)
 
-const monstersWithEnhancedDamage = monstersDupe.map((monster) => {
+const monstersWithEnhancedDamage = clonedMonsters.map((monster) => {
 	const localMonster = { ...monster }
 
     localMonster.attacks.map((attack) => {
-        attack.damage.max = attack.damage.max + 10
+        attack.damage.max = attack.damage.max + 15
 
       return attack  
     })
